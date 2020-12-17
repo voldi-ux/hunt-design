@@ -1,0 +1,18 @@
+@import "../../sass/colors.scss";
+@import "../../sass/typography.scss";
+@import "../../sass/mixing.scss";
+@import "../../sass/variebles.scss";
+
+.contentBox {
+  &:nth-child(odd) {
+    margin-top: 5rem;
+  }
+  div {
+    box-shadow: $shadow;
+    padding: 2rem;
+  }
+  p {
+    // line-height: 1.2rem;
+    font-size: 1.6rem;
+  }
+}

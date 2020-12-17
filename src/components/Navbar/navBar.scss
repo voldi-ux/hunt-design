@@ -1,0 +1,29 @@
+
+@font-face {
+    font-family:Oingo;
+    src: url('../../assets/fonts/Oingo.otf');
+}
+
+
+@import '../../sass/colors.scss';
+@import '../../sass/typography.scss';
+@import '../../sass/mixing.scss';
+
+
+.navBar {
+    padding: 0 1rem;
+    background-color: #fff !important;
+
+    li {
+        a {
+            font-family: Oingo;
+            font-size: 2rem;
+        }
+
+        .nav-link.active {
+            color:$color-secondary !important;
+        }
+    }
+    &__logo {
+    }
+}

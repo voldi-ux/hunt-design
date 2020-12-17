@@ -1,0 +1,29 @@
+@import "../../sass/colors.scss";
+@import "../../sass/typography.scss";
+@import "../../sass/mixing.scss";
+
+.footer {
+  height: 20rem;
+  background-color: rgb(20, 22, 22);
+  justify-content: center;
+  align-items: center;
+
+  &__links {
+    list-style: none;
+  }
+
+  &__link {
+    margin: 1rem;
+
+    a {
+      color: #fff;
+      font-family: Oingo;
+      text-decoration: none;
+      font-size: 1.4rem;
+    }
+  }
+
+  &__copyright {
+    font-size: 1.6rem;
+  }
+}

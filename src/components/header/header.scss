@@ -1,0 +1,43 @@
+@import "../../sass/colors.scss";
+@import "../../sass/typography.scss";
+@import "../../sass/mixing.scss";
+
+.header {
+  height: 80vh;
+  width: 100vw;
+  position: relative;
+  
+  &__image {
+    height: 100%;
+    width: 100%;
+    z-index: -18888888;
+  }
+
+  &__content {
+    position: absolute;
+    width: 30rem;
+    top: 35%;
+    left: 5%;
+
+    h1 {
+      font-family: mulbery;
+      font-size: 7rem;
+    }
+    p {
+      font-size: 1.8rem;
+    }
+    a:link,a:active,a {
+      text-decoration: none !important;
+      font-size: 2rem;
+      padding: 1rem 3rem;
+      color: $color-white;
+      margin-top: .5rem;
+      background: linear-gradient(to right,
+        rgba(211, 57, 196, 1) 0%,
+        rgba(214, 41, 190, 1) 28.62%,
+        rgba(214, 29, 179, 1) 63.18%,
+        rgba(255, 0, 255, 1) 100%
+      );
+    }
+  }
+}

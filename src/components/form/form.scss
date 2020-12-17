@@ -1,0 +1,31 @@
+@import "../../sass/colors.scss";
+@import "../../sass/typography.scss";
+@import "../../sass/mixing.scss";
+@import "../../sass/variebles.scss";
+
+form {
+  box-shadow: $shadow;
+  padding: 3rem;
+  z-index: 10;
+  input {
+    border: transparent !important;
+    outline: none !important;
+    height: 5rem !important;
+    color: #999999 !important;
+    background-color: #f4eff4 !important;
+    padding: 2rem !important;
+    font-size: 1.5rem !important;
+
+  }
+
+   .textarea {
+     padding: 2rem;
+    font-size: 1.6rem;
+    border: transparent !important;
+    outline: none !important;
+    color: #999999;
+    background-color: #f4eff4 !important;
+    width: 100%;
+    height: 15rem;
+  }
+}

@@ -1,0 +1,21 @@
+@import '../../sass/colors.scss';
+@import '../../sass/typography.scss';
+@import '../../sass/mixing.scss';
+@import '../../sass/variebles.scss';
+
+
+.packageBox {
+    &:nth-child(2) {
+        margin-top: 5rem;
+      }
+      .card {
+          width: 100%;
+          margin: 0 2rem;
+          border: transparent !important;
+          box-shadow: $shadow;
+      }
+    .list-group-item {
+       border: transparent;
+       font-size: 1.6rem;
+    }
+}

@@ -1,0 +1,45 @@
+@font-face {
+    font-family:mulbery;
+    src: url('../assets/fonts/Mulberry.otf');
+}
+@font-face {
+    font-family:Oingo;
+    src: url('../assets/fonts/Oingo.otf');
+}
+@font-face {
+    font-family:bahnschrift;
+    src: url('../assets/fonts/bahnschrift.ttf');
+}
+
+
+html {
+    font-size: 62.5%;
+
+}
+
+body {
+    margin-bottom: 2rem;
+    font-family: bahnschrift;
+    line-height: 2rem;
+}
+
+.line {
+    position: relative;
+    display: inline-block;
+
+    &::after {
+        content: '';
+        width: 70%;
+        height: 4px;
+        background-color: $color-secondary;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    } 
+}
+
+.card {
+    a {
+        font-size: 1.6rem;
+    }
+}

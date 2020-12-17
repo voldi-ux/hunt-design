@@ -1,0 +1,22 @@
+@import '../../sass/colors.scss';
+@import '../../sass/typography.scss';
+@import '../../sass/mixing.scss';
+@import '../../sass/variebles.scss';
+
+.projectBox {
+
+    &:nth-child(2) {
+        margin-top: 5rem;
+      }
+      .card {
+          width: 100%;
+          margin: 0 2rem;
+          border: transparent !important;
+          box-shadow: $shadow;
+      }
+
+    p {
+        font-size: 1.6rem;
+        text-align: left;
+    }
+}
