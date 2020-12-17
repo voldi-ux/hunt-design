@@ -13,7 +13,10 @@
   }
 
   &__link {
-    margin: 1rem;
+    &:not(:last-child) {
+      margin-right: 1rem;
+    }
+    // padding: 1rem;
 
     a {
       color: #fff;

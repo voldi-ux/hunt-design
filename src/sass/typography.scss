@@ -1,45 +1,56 @@
 @font-face {
-    font-family:mulbery;
-    src: url('../assets/fonts/Mulberry.otf');
+  font-family: mulbery;
+  src: url("../assets/fonts/Mulberry.otf");
 }
 @font-face {
-    font-family:Oingo;
-    src: url('../assets/fonts/Oingo.otf');
+  font-family: Oingo;
+  src: url("../assets/fonts/Oingo.otf");
 }
 @font-face {
-    font-family:bahnschrift;
-    src: url('../assets/fonts/bahnschrift.ttf');
+  font-family: bahnschrift;
+  src: url("../assets/fonts/bahnschrift.ttf");
 }
-
+* {
+  // border: 1px solid #f00 !important;
+}
 
 html {
-    font-size: 62.5%;
-
+  font-size: 62.5%;
 }
 
 body {
-    margin-bottom: 2rem;
-    font-family: bahnschrift;
-    line-height: 2rem;
+  margin-bottom: 2rem;
+  font-family: bahnschrift;
+  line-height: 2rem;
+  color: #333333;
 }
 
 .line {
-    position: relative;
-    display: inline-block;
-
-    &::after {
-        content: '';
-        width: 70%;
-        height: 4px;
-        background-color: $color-secondary;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-    } 
+  position: relative;
+  display: inline-block;
+  padding-bottom: 1rem;
+  &::after {
+    content: "";
+    width: 70%;
+    height: 4px;
+    background-color: $color-secondary;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
 }
 
 .card {
-    a {
-        font-size: 1.6rem;
-    }
+  a {
+    font-size: 1.6rem;
+  }
+}
+
+.move-top {
+  margin-top: -10rem;
+  background-color: #fff;
+  z-index:3;
+  @media (max-width: 780px) {
+    margin-top: 1rem;
+  }
 }

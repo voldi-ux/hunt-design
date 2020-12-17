@@ -1,29 +1,31 @@
-
 @font-face {
-    font-family:Oingo;
-    src: url('../../assets/fonts/Oingo.otf');
+  font-family: Oingo;
+  src: url("../../assets/fonts/Oingo.otf");
 }
 
-
-@import '../../sass/colors.scss';
-@import '../../sass/typography.scss';
-@import '../../sass/mixing.scss';
-
+@import "../../sass/colors.scss";
+@import "../../sass/typography.scss";
+@import "../../sass/mixing.scss";
 
 .navBar {
-    padding: 0 1rem;
-    background-color: #fff !important;
+  padding: 0 3rem;
 
-    li {
-        a {
-            font-family: Oingo;
-            font-size: 2rem;
-        }
+  li {
+    &:hover {
+      a {
+        color: $color-secondary !important;
+      }
+    }
+    a {
+      font-size: 2rem;
+      color: #333333 !important;
+    }
 
-        .nav-link.active {
-            color:$color-secondary !important;
-        }
+    .nav-link.active {
+      color: $color-secondary !important;
     }
-    &__logo {
-    }
+  }
+  &__logo {
+    width: 10rem;
+  }
 }

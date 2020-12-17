@@ -4,8 +4,8 @@ import "./contentBox.scss";
 
 const ContentBox = ({ detail }) => {
   return (
-    <div className="contentBox col-sm-4 ">
-        <div className='mx-1'>
+    <div className="contentBox col-sm-6 col-md-4 ">
+        <div className=''>
       <h1 className="text-center">{detail.title}</h1>
       <p className='text-center'>
         You also have the option of choosing the number of syllables of the

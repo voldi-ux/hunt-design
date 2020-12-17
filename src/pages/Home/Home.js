@@ -1,8 +1,9 @@
-import React from "react";
+import React, {useState} from "react";
 import Header from "../../components/header/header";
 import Form from "../../components/form/form";
 import ContentBox from "../../components/contentBox/contentBox";
 import ProjectBox from "../../components/projectBox/projectBox";
+import Drawer from "react-bottom-drawer";
 import findme from "../../assets/images/image-2.png";
 import trilo from "../../assets/images/image-3.png";
 import natours from "../../assets/images/image-4.png";
@@ -20,6 +21,7 @@ import "./Home.scss";
 import PackageBox from "../../components/packageBox/packageBox";
 
 const HomePage = () => {
+  const [drawerVisible,setDrawerVisible] = useState(false)
   const websites = [
     {
       title: "Findme Website",
@@ -76,22 +78,26 @@ const HomePage = () => {
       ],
     },
   ];
-
+  const onClose = React.useCallback(() => {
+    setDrawerVisible(false);
+  }, []);
   const renderWebsite = (web) => {
     return <ProjectBox web={web} />;
   };
+  const toggleDrawer = () => setDrawerVisible(!drawerVisible)
+
   const renderPackages = (Package) => {
-    return <PackageBox key={Package.title} Package={Package} />;
+    return <PackageBox toggleDrawer={toggleDrawer} key={Package.title} Package={Package} />;
   };
   return (
     <>
       {/* header */}
       <Header  />
       <div className="row padding">
-        <div className="col-md-4"></div>
-        <div className="col-md-4"></div>
-        <div className="col-md-4">
-          <Form />
+        <div className="col-md-4 "></div>
+        <div className="col-md-4 "></div>
+        <div className="col-md-4  move-top">
+          <Form title='Get In Touch'/>
         </div>
       </div>
       {/* header ends here */}
@@ -150,7 +156,7 @@ const HomePage = () => {
         <h1 className="line mb-5">Contacts</h1>
         <div className=" ">
           <div className='row contact-content'>
-          <div className="col-md-6">
+          <div className="col-md-6 mb-4">
               
             <ul class="list-group ">
               <li class="list-group-item d-flex">
@@ -160,12 +166,12 @@ const HomePage = () => {
 
               <li class="list-group-item d-flex">
                 <AiOutlinePhone className="icon yellow" />
-                <h3 className="align-self-center">0671530612</h3>
+                <h3 className="align-self-center">+27 671 530 612</h3>
               </li>
 
               <li class="list-group-item d-flex">
                 <AiOutlineWhatsApp className="icon green" />
-                <h3 className="align-self-center">0671530612</h3>
+                <h3 className="align-self-center">+27 671 530 612</h3>
               </li>
 
               <li class="list-group-item d-flex">
@@ -188,12 +194,22 @@ const HomePage = () => {
             </ul>
           </div>
           <div className="col-md-6">
-            <Form />
+            <Form title='Contact'/>
           </div>
           </div>
         </div>
       </section>
     <Footer />
+    <Drawer 
+      isVisible={drawerVisible}
+      onClose={onClose}
+    >
+      <div classname='drawer'>
+        <div className=''>
+           <Form title='Enquire'/>
+        </div>
+      </div>
+    </Drawer>
     </>
   );
 };

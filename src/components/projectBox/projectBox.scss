@@ -7,12 +7,17 @@
 
     &:nth-child(2) {
         margin-top: 5rem;
-      }
-      .card {
-          width: 100%;
-          margin: 0 2rem;
+    }
+    .card {
+        width: 100%;
+        margin: 1rem 2rem;
+        @media(max-width: 780px) {
+            margin: 1rem 0;
+          }
+        
           border: transparent !important;
           box-shadow: $shadow;
+          padding: 2rem;
       }
 
     p {

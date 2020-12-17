@@ -2,11 +2,13 @@ import React from "react";
 import Button from '../buttons/buttonPrimary'
 import "./form.scss";
 
-const Form = () => {
+const Form = ({title}) => {
   return (
     <form>
       <h1 className='line'>
-        Get In Touch
+        {
+          title
+        }
       </h1>
       <div className="my-5">
         <input

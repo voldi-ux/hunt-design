@@ -4,15 +4,43 @@
 @import "../../sass/variebles.scss";
 
 .contentBox {
+  padding: 1rem;
   &:nth-child(odd) {
     margin-top: 5rem;
   }
+
   div {
     box-shadow: $shadow;
     padding: 2rem;
+    position: relative;
+
+    &::after,
+    &::before {
+      content: "";
+
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+
+    &::after {
+      width: 40%;
+      height: 4px;
+      background-color: rgb(211, 54, 54);
+    }
+
+    &::before {
+      height: 40%;
+      width: 4px;
+      background-color: rgb(211, 54, 54);
+    }
   }
   p {
     // line-height: 1.2rem;
+    // position: absolute;
     font-size: 1.6rem;
+    z-index: 99999 !important;
   }
 }
