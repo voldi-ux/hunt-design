@@ -11,7 +11,7 @@ export const ContentDetails = [{
     content:`Having an amazing looking website with great user interface and an outstanding user experience is realy crucial in today's world. You will get your website or web application that looks brillient and functions on all devices. The perfect user interface and an astounding user experience will make your website standout  in the market. `
 }, {
     title:'SEO',
-    content:`Your website will be intergrated with search engine optimization(SEO). SEO,which is the process of improving your website to increase it's visibility and make it rank high in seacrh results. The more visible your website is, the more likely you will amass attention and attract customers to your business.`
+    content:`Your website will be intergrated with search engine optimization(SEO). SEO,which is the process of improving your website to increase it's visibility and make it rank high in search results. The more visible your website is, the more likely you will amass attention and attract customers to your business.`
 }]
 
 
