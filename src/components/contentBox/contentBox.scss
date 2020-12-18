@@ -8,7 +8,55 @@
   &:nth-child(odd) {
     margin-top: 5rem;
   }
+  h1 {
+    position: relative;
 
+  }
+   &:nth-child(1) {
+     h1::before{
+      content: '';
+      width: 4rem;
+      height: 4rem;
+      background: url('../../assets/images/world-wide-web-icon-15.png');
+      background-position: center;
+      background-size: cover;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      
+     }
+   }
+   &:nth-child(2) {
+     h1::before{
+      content: '';
+      width: 4rem;
+      height: 4rem;
+      background: url('../../assets/images/layout.jpg');
+      background-position: center;
+      background-size: cover;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      
+     }
+   }
+   &:nth-child(3) {
+     h1::before{
+      content: '';
+      width: 4rem;
+      height: 4rem;
+      background: url('../../assets/images/seo-icon-png-13.png');
+      background-position: center;
+      background-size: cover;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      
+     }
+   }
   div {
     box-shadow: $shadow;
     padding: 2rem;
@@ -23,6 +71,7 @@
       top: 0;
       left: 0;
       z-index: 1;
+      
     }
 
     &::after {
@@ -41,6 +90,6 @@
     // line-height: 1.2rem;
     // position: absolute;
     font-size: 1.6rem;
-    z-index: 99999 !important;
+
   }
 }

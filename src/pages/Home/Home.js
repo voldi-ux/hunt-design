@@ -4,9 +4,7 @@ import Form from "../../components/form/form";
 import ContentBox from "../../components/contentBox/contentBox";
 import ProjectBox from "../../components/projectBox/projectBox";
 import Drawer from "react-bottom-drawer";
-import findme from "../../assets/images/image-2.png";
-import trilo from "../../assets/images/image-3.png";
-import natours from "../../assets/images/image-4.png";
+
 import aboutImage from "../../assets/images/vector.png";
 import {
   AiOutlineMail,
@@ -15,6 +13,7 @@ import {
   AiOutlinePhone,
   AiOutlineGithub,
 } from "react-icons/ai";
+import {websites,packages, ContentDetails,aboutContent} from '../../data/data'
 import Footer from '../../components/footer/footer'
 
 import "./Home.scss";
@@ -22,62 +21,7 @@ import PackageBox from "../../components/packageBox/packageBox";
 
 const HomePage = () => {
   const [drawerVisible,setDrawerVisible] = useState(false)
-  const websites = [
-    {
-      title: "Findme Website",
-      image: findme,
-      color: "#1647C1",
-    },
-    {
-      title: "Trilo Website",
-      image: trilo,
-      color: "#ED1E79",
-    },
-    {
-      title: "Natours Website",
-      image: natours,
-      color: "#15B756",
-    },
-  ];
-
-  const packages = [
-    {
-      title: "Static Website",
-      services: [
-        "3 pages",
-        "2 x Desigins",
-        "ssl security",
-        "SEO",
-        "Responsive",
-        "1 month maintenance",
-      ],
-    },
-    {
-      title: "Online Shops",
-      services: [
-        "Shopping Cart",
-        "Online Payments",
-        "2 x Desigins",
-        "ssl security",
-        "SEO",
-        "Responsive",
-        "2 month maintenance",
-        "Database",
-      ],
-    },
-    {
-      title: "Web Applications",
-      services: [
-        "User Authentication",
-        "Loggin implementation",
-        "ssl security",
-        "SEO",
-        "Responsive",
-        "3 month maintenance",
-        "Database",
-      ],
-    },
-  ];
+  
   const onClose = React.useCallback(() => {
     setDrawerVisible(false);
   }, []);
@@ -89,6 +33,9 @@ const HomePage = () => {
   const renderPackages = (Package) => {
     return <PackageBox toggleDrawer={toggleDrawer} key={Package.title} Package={Package} />;
   };
+  const renderContentBox = box => {
+    return <ContentBox detail={box}/>
+  }
   return (
     <>
       {/* header */}
@@ -105,21 +52,10 @@ const HomePage = () => {
       {/* offer section start */}
 
       <section className="row offers ">
-        <ContentBox
-          detail={{
-            title: "Web Design",
-          }}
-        />
-        <ContentBox
-          detail={{
-            title: "UX/UI",
-          }}
-        />
-        <ContentBox
-          detail={{
-            title: "SEO",
-          }}
-        />
+          {
+            ContentDetails.map(renderContentBox)
+          }
+      
       </section>
       {/* offer section ends here */}
 
@@ -142,11 +78,7 @@ const HomePage = () => {
             <img src={aboutImage} alt="about image" className="col-6" />
           </div>
           <p className="col-md-6">
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-            nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-            volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-            ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
-            consequat. Duis autem vel eum
+           {aboutContent.content}
           </p>
         </div>
        </div>
@@ -176,7 +108,7 @@ const HomePage = () => {
 
               <li class="list-group-item d-flex">
                 <AiOutlineLinkedin className="icon blue" />
-                <a href="#ffff" className="align-self-center">
+                <a href="https://www.linkedin.com/in/voldi-muyumba-21a43914b/" className="align-self-center">
                   <h3>
                   Linkedin
                   </h3>
@@ -185,7 +117,7 @@ const HomePage = () => {
 
               <li class="list-group-item d-flex">
                 <AiOutlineGithub className="icon red" />
-                <a href="#ffff" className="align-self-center">
+                <a href="https://github.com/voldi-ux/" className="align-self-center">
                   <h3>
                   Github
                   </h3>
