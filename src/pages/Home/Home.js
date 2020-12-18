@@ -5,6 +5,7 @@ import ContentBox from "../../components/contentBox/contentBox";
 import ProjectBox from "../../components/projectBox/projectBox";
 import Drawer from "react-bottom-drawer";
 
+
 import aboutImage from "../../assets/images/vector.png";
 import {
   AiOutlineMail,
@@ -12,6 +13,7 @@ import {
   AiOutlineLinkedin,
   AiOutlinePhone,
   AiOutlineGithub,
+  AiOutlineGooglePlus
 } from "react-icons/ai";
 import {websites,packages, ContentDetails,aboutContent} from '../../data/data'
 import Footer from '../../components/footer/footer'
