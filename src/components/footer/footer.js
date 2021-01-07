@@ -37,7 +37,7 @@ const Footer = () => {
         <p className='footer__copyright' >
           &copy;copyright, {
               new Date().getFullYear()
-          }, HuntDesigin
+          }, HuntDesign
         </p>
     </footer>
 }

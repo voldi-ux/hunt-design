@@ -2,25 +2,100 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
       content="a web design brand that helps in creating websites for businesses of all sorts and sizes."
     />
-    <!-- <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" /> -->
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/favicon.png" />
     <link rel="stylesheet" href="%PUBLIC_URL%/bootstrap.min.css" />
     <link rel="stylesheet" href="%PUBLIC_URL%/fontawesome/css/all.css" />
-    
-    
+    <link rel="stylesheet" href="%PUBLIC_URL%/animate.min.css" />
+
     <title>HuntDesign</title>
+    <style>
+      .flex-center {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+      }
+
+      .preloader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background:#ffffff;
+        z-index: 99999999;
+      }
+
+      .dots .dot {
+        display: inline-block;
+        width: 35px;
+        height: 35px;
+        margin: 0 10px 0 10px;
+        border-radius: 50%;
+        background: #D339C4;
+        -webkit-animation: dot-dot-dot 1.4s linear infinite;
+        animation: dot-dot-dot 1.4s linear infinite;
+      }
+
+      .dots .dot:nth-child(2) {
+        animation-delay: 0.2s;
+      }
+
+      .dots .dot:nth-child(3) {
+        animation-delay: 0.4s;
+      }
+
+      @keyframes dot-dot-dot {
+        0%,
+        60%,
+        100% {
+          -webkit-transform: initial;
+          -ms-transform: initial;
+          transform: initial;
+        }
+        30% {
+          -webkit-transform: translateY(-25px);
+          -ms-transform: translateY(-25px);
+          transform: translateY(-25px);
+        }
+      }
+    </style>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div class="preloader js-preloader flex-center">
+      <div class="dots">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
+    </div>
+    
     <div id="root"></div>
-  
 
     <script src="%PUBLIC_URL%/bootstrap.min.js"></script>
+    <script>
+     
+      const loader = document.querySelector(".preloader");
+      window.addEventListener(
+        "load",
+        setTimeout(() => {
+          loader.style.display = "none";
+        }, 3000)
+      );
+      
+    </script>
   </body>
 </html>

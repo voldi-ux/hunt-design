@@ -1,18 +1,14 @@
 import React from "react";
-import Button from '../buttons/buttonPrimary'
+import Button from "../buttons/buttonPrimary";
 import "./form.scss";
 
-const Form = ({title}) => {
+const Form = ({ title }) => {
   return (
-    <form>
-      <h1 className='line'>
-        {
-          title
-        }
-      </h1>
+    <form action="https://formspree.io/f/mzbkyeyj" method="POST">
+      <h1 className="line">{title}</h1>
       <div className="my-5">
         <input
-          placeholder='Full Name'
+          placeholder="Full Name"
           type="text"
           className="form-control"
           id="name"
@@ -22,17 +18,16 @@ const Form = ({title}) => {
       </div>
       <div className="my-5">
         <input
-          placeholder='Email'
+          placeholder="Email"
           type="email"
-          name='email'
+          name="email"
           className="form-control"
           id="email"
-
         />
       </div>
-        <textarea className='textarea'  placeholder='message'/>
-  
-       <Button title='Submit'/>
+      <textarea className="textarea" placeholder="message" />
+
+      <Button title="Submit" />
     </form>
   );
 };

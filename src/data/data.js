@@ -16,14 +16,14 @@ export const ContentDetails = [{
 
 
 export const aboutContent = {
-    content:`HuntDesign founded by Voldi Muyumba, a full stack web developer and a software engineer, helps businesses of all sorts and sizes with creation of outstanding looking websites and web applications. It also improves user interface, user experience and intergrate search engine optimization, responsive web design for businesses that already have a pre-existing website or web application. HuntDesign has got a mission to not only assists local businesses expand significantly but to go global and aids all businesses around the world.`
+    content:`HuntDesign founded by Voldi Muyumba, a full stack web developer, a freelancer and a software engineer, helps businesses of all sorts and sizes with creation of outstanding looking websites and web applications. It also improves user interface, user experience and intergrate search engine optimization, responsive web design for businesses that already have a pre-existing website or web application. HuntDesign has got a mission to not only assists local businesses expand significantly but to go global and aids all businesses around the world.`
 }
 
 
 
 export const websites = [
     {
-      title: "SI recoring studio website",
+      title: "SI recording studio website",
       image: findme,
       color: "#15B756",
       description: `A stunning looking website created for a recording studio located in Johannesburg South Africa. The site is responsive with a remarkable user interface and user experience`,
@@ -40,7 +40,7 @@ export const websites = [
       title: "Natours Website",
       image: natours,
       color: "#15B756",
-      description:`The Natours website is an extraordinary site were you can book for awesome tours with your families or friends and take a tour out in nature.`,
+      description:`The Natours website is an extraordinary site where you can book for awesome tours with your families or friends and take a tour out in nature.`,
       link:' https://voldi-ux.github.io/natours'
     },
   ];
