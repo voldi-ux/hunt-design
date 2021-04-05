@@ -25,7 +25,7 @@ const Form = ({ title }) => {
           id="email"
         />
       </div>
-      <textarea className="textarea" placeholder="message" />
+      <textarea name='message' className="textarea" placeholder="message" />
 
       <Button title="Submit" />
     </form>

@@ -14,7 +14,7 @@ const ProjectBox = ({web:{image, color, title , description , link}}) => {
               description
             }
           </p>
-          <a href={link} class="btn d-block  btn-primary">
+          <a href={link} target='_blank' class="btn d-block  btn-primary">
             Visit site
           </a>
         </div>

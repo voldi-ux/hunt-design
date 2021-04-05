@@ -1,10 +1,13 @@
 @import "../../sass/variebles.scss";
-
+ * {
+   user-select: none;
+ }
 .about,
 .offers,
 .packages,
 .contact,
 .projects {
+  
   padding: 8rem 15rem;
   margin: 0;
   width: 100%;

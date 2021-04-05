@@ -1,4 +1,5 @@
-import findme from "../assets/images/image-2.png";
+import studio from "../assets/images/image-2.png";
+import findme from "../assets/images/findme.png";
 import trilo from "../assets/images/image-3.png";
 import natours from "../assets/images/image-4.png";
 
@@ -8,7 +9,7 @@ export const ContentDetails = [{
 },
 {
     title:'UI/UX',
-    content:`Having an amazing looking website with great user interface and an outstanding user experience is realy crucial in today's world. You will get your website or web application that looks brillient and functions on all devices. The perfect user interface and an astounding user experience will make your website standout  in the market. `
+    content:`Having an amazing looking website with great user interface and an outstanding user experience is really crucial in today's world. You will get your website or web application that looks brilliant and functions on all devices. The perfect user interface and an astounding user experience will make your website standout  in the market. `
 }, {
     title:'SEO',
     content:`Your website will be intergrated with search engine optimization(SEO). SEO,which is the process of improving your website to increase it's visibility and make it rank high in search results. The more visible your website is, the more likely you will amass attention and attract customers to your business.`
@@ -16,7 +17,7 @@ export const ContentDetails = [{
 
 
 export const aboutContent = {
-    content:`HuntDesign founded by Voldi Muyumba, a full stack web developer, a freelancer and a software engineer, helps businesses of all sorts and sizes with creation of outstanding looking websites and web applications. It also improves user interface, user experience and intergrate search engine optimization, responsive web design for businesses that already have a pre-existing website or web application. HuntDesign has got a mission to not only assists local businesses expand significantly but to go global and aids all businesses around the world.`
+    content:`HuntDesign founded by Voldi Muyumba, a full stack web developer, a freelancer and a software developer, helps businesses of all sorts and sizes with creation of outstanding looking websites and web applications. It also improves user interface, user experience and intergrate search engine optimization, responsive web design for businesses that already have a pre-existing website or web application. HuntDesign has got a mission to not only assists local businesses expand significantly but to go global and aids all businesses around the world.`
 }
 
 
@@ -24,10 +25,17 @@ export const aboutContent = {
 export const websites = [
     {
       title: "SI recording studio website",
-      image: findme,
+      image: studio,
       color: "#15B756",
       description: `A stunning looking website created for a recording studio located in Johannesburg South Africa. The site is responsive with a remarkable user interface and user experience`,
       link:' https://voldi-ux.github.io/si-studio'
+    },
+    {
+      title: "Findme",
+      image: findme,
+      color: "#0a55b8",
+      description:`Findme is an instant messaging web application that allows you to find all important people and their profiles and allow you to message instantly.Functions on all type of devices.`,
+      link:'https://findme-vol.herokuapp.com/'
     },
     {
       title: "Trilo Website",
